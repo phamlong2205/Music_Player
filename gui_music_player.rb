@@ -5,6 +5,7 @@ TOP_COLOR = Gosu::Color.new(0xFF1EB1FA)
 BACKGROUND_COLOR = Gosu::Color.argb(0xff_eeeeee)
 COVER_WIDTH = 250
 
+
 module ZOrder
   BACKGROUND, PLAYER, UI = *0..2
 end
