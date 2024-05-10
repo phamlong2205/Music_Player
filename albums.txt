@@ -1,4 +1,4 @@
-2
+3
 1-800-LOVE
 GERDNANG
 1
@@ -45,4 +45,22 @@ Cho Em An Toan
 tracks/Cho_Em_An_Toan.mp3
 NOLOVENOLIFE
 tracks/NOLOVENOLIFE.mp3
-
+Map of the Soul: Persona
+BTS
+2
+Map_of_the_Soul_Persona
+7
+Intro: Persona
+tracks/Intro_Persona.mp3
+Boy with Luv
+tracks/Boy_with_Luv.mp3
+Mikrokosmos
+tracks/Mikrokosmos.mp3
+Make It Right
+tracks/Make_It_Right.mp3
+HOME
+tracks/HOME
+Jamais Vu
+tracks/Jamais_Vu.mp3
+Dionysus
+tracks/Dionysus
