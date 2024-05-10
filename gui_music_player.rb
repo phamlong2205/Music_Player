@@ -2,7 +2,7 @@ require 'rubygems'
 require 'gosu'
 
 TOP_COLOR = Gosu::Color.new(0xFF1EB1FA)
-BACKGROUND_COLOR = Gosu::Color.argb(0xff_eeeeee)
+BOTTOM_COLOR = Gosu::Color.argb(0xff_eeeeee)
 COVER_WIDTH = 250
 
 
@@ -80,7 +80,7 @@ def read_albums()
     return albums
 end
 
-class MusicPlayer < Gosu::Window
+class MusicPlayerMain < Gosu::Window
 
 	def initialize
 	    super 500, 700
@@ -183,7 +183,12 @@ class MusicPlayer < Gosu::Window
 		end
 
 		if not @song.playing? and not @manual_pause
-			@selected_track = (@selected_track + 1) % album.tracks.length
+			if @selected_track < (album.tracks.length - 1)
+				@selected_track = (@selected_track + 1)
+			else 
+				@first_track_position = 0
+				@selected_track = 0
+			end
 			@change_track = true
 		end
 
@@ -195,7 +200,7 @@ class MusicPlayer < Gosu::Window
 	# Draw a coloured background using TOP_COLOR and BOTTOM_COLOR
 
 	def draw_background
-		Gosu.draw_rect(0, 0, 500, 700, BACKGROUND_COLOR, ZOrder::BACKGROUND, mode=:default)
+		Gosu.draw_rect(0, 0, 500, 700, BOTTOM_COLOR, ZOrder::BACKGROUND, mode=:default)
 	end
 
 	# Handle the button_down event
@@ -319,4 +324,4 @@ class MusicPlayer < Gosu::Window
 
 end
 
-MusicPlayer.new.show
+MusicPlayerMain.new.show if __FILE__ == $0
