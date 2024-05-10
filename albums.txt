@@ -59,8 +59,8 @@ tracks/Mikrokosmos.mp3
 Make It Right
 tracks/Make_It_Right.mp3
 HOME
-tracks/HOME
+tracks/HOME.mp3
 Jamais Vu
 tracks/Jamais_Vu.mp3
 Dionysus
-tracks/Dionysus
+tracks/Dionysus.mp3
